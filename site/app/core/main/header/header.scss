@@ -2,6 +2,44 @@
 @import '../../css/colors';
 
 header{
-  min-height: 420px;
+  min-height: 520px;
+  background-color: $orange!important;
   background-size: cover!important;
+}
+
+#top{
+  width: 80%;
+  margin: 0 auto 520px;
+  h2{
+    font-size: 5.2em;
+    font-weight: 300;
+    margin-top: 25%;
+    color: $purple;
+  }
+  p{
+    
+    font-size: 2.2em;
+    font-weight: 300;
+    margin: 40px 0;
+    color: white;
+  }
+  a{
+    color: $purple;
+    font-weight: 400;
+    font-size: 2.2em;
+    @include transition(background .3s ease, color .3s ease);
+    text-decoration: none;
+    &.btn-webarrio{
+      margin: auto;
+      display: block;
+      width: 300px;
+      line-height: 60px;
+      border: solid $purple 2px;
+    }
+    &:hover{
+      background-color: $purple;
+      color: white;
+    }
+  }
+
 }

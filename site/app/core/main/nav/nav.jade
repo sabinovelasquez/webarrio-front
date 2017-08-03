@@ -1,11 +1,11 @@
 .menu(du-scrollspy='top')
-  nav.navbar.navbar-default
+  nav.navbar.navbar-default.navbar-fixed-top
     .container-fluid.container
       .navbar-header
         button.mob-menu.navbar-toggle.collapsed(type='button', ng-click='navCollapsed=!navCollapsed')
           i.fa.fa-navicon
         .navbar-brand
-          .logo
+          .logo-h
         .navbar-brand.pull-left.hidden-sm.hidden-md.hidden-lg
       .collapse.navbar-collapse(ng-class='{"in":navCollapsed}')
         ul.nav.navbar-nav

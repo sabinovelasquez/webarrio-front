@@ -1,3 +1,9 @@
 @import '../../css/functions';
 @import '../../css/colors';
 
+.navbar-default{
+  background: transparent;
+  .logo-h{
+    background-size: contain;
+  }
+}
