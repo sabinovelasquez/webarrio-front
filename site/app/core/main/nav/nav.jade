@@ -1,5 +1,5 @@
 .menu(du-scrollspy='top')
-  nav.navbar.navbar-default.navbar-fixed-top
+  nav.navbar.navbar-default.navbar-fixed-top.active
     .container-fluid.container
       .navbar-header
         button.mob-menu.navbar-toggle.collapsed(type='button', ng-click='navCollapsed=!navCollapsed')
@@ -8,6 +8,12 @@
           .logo-h
         .navbar-brand.pull-left.hidden-sm.hidden-md.hidden-lg
       .collapse.navbar-collapse(ng-class='{"in":navCollapsed}')
-        ul.nav.navbar-nav
+        ul.nav.navbar-nav.pull-right
           li
-            a(du-smooth-scroll, duration='800', href='#example') Example
+            a(du-smooth-scroll, duration='800', href='#philosophy') Filosofía
+          li
+            a(du-smooth-scroll, duration='800', href='#how') ¿Cómo funciona?
+          li
+            a(du-smooth-scroll, duration='800', href='#contact') Contacto
+          li.login
+            a Inicia Sesión

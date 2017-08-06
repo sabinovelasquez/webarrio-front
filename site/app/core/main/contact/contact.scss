@@ -54,6 +54,16 @@
       text-align: center;
       color: white;
       background: $orange;
+      @include transition(background .3s ease);
+      &.facebook:hover{
+        background: #3b5998;
+      }
+      &.twitter:hover{
+        background: #00b6f1;
+      }
+      &.instagram:hover{
+        background: #c32aa3;
+      }
     }
   }
   .available{
