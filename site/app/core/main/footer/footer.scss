@@ -2,4 +2,30 @@
 @import '../../css/colors';
 
 footer{
+  padding: 90px 0 0;
+  background-color: $dark-grey;
+  .logo-v{
+    height: 100px;
+    margin-bottom: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  p{
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 40px 0;
+    color: white;
+    &.legal{
+      margin-top: 40px;
+    }
+    a{
+      font-size: 1.2em;
+      font-weight: 300;
+      color: white;
+      &:hover{
+        text-decoration: none;
+        color: $orange;
+      }
+    }
+  }
 }
