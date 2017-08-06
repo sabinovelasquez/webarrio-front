@@ -1,0 +1,10 @@
+#events(style='{{events.bgStyle}}')
+  .container(ng-mouseover='events.pause()', ng-mouseleave='events.unpause()')
+    .col-sm-6
+      h2 {{events.title}}
+      p {{events.text}}
+    .circles
+      .icon(ng-repeat='key in events.info track by $index', ng-click='events.toSlide($index)')
+        i.fa(ng-class='{"fa-circle":$index===events.current,"fa-circle-o":$index!==events.current}')
+    .col-sm-6.hidden-xs
+      img.devices.animate-show(ng-src='{{events.img}}', fade-in)
