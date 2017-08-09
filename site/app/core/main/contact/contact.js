@@ -7,9 +7,9 @@ export default ngModule => {
       scope: {},
       controllerAs: 'contact',
       controller: function contactCtrl() {
-        this.bgStyle = 'background-image:url("../core/img/bg-contact.png")';
-        this.gp = '../core/img/google-play-badge.png';
-        this.as = '../core/img/appstore.png';
+        this.bgStyle = 'background-image:url("../img/bg-contact.png")';
+        this.gp = '../img/google-play-badge.png';
+        this.as = '../img/appstore.png';
       },
     };
   });

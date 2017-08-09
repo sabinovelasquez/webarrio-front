@@ -7,10 +7,10 @@ export default ngModule => {
       scope: {},
       controllerAs: 'how',
       controller: function howCtrl() {
-        this.asam = '../core/img/icon-asam.png';
-        this.admin = '../core/img/icon-admin.png';
-        this.alert = '../core/img/icon-alert.png';
-        this.com = '../core/img/icon-com.png';
+        this.asam = './img/icon-asam.png';
+        this.admin = './img/icon-admin.png';
+        this.alert = './img/icon-alert.png';
+        this.com = './img/icon-com.png';
       },
     };
   });

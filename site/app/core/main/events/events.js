@@ -7,7 +7,7 @@ export default ngModule => {
       scope: {},
       controllerAs: 'events',
       controller: function eventsCtrl() {
-        const imgUrl = '../core/img/';
+        const imgUrl = './img/';
         let pause = false;
         const timming = 6000;
         this.current = 0;
@@ -63,8 +63,8 @@ export default ngModule => {
         this.unpause = () => {
           pause = false;
         };
-        this.bgStyle = 'background-image:url("../core/img/bg-events.png")';
-        this.device = '../core/img/d-events.png';
+        this.bgStyle = 'background-image:url("./img/bg-events.png")';
+        this.device = './img/d-events.png';
         this.img = `${imgUrl}${this.info[this.current].img}`;
         const rotate = () => {
           if (pause === false) {

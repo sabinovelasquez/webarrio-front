@@ -7,9 +7,9 @@ export default ngModule => {
       scope: {},
       controllerAs: 'phil',
       controller: function philCtrl() {
-        this.devicesBg = '../core/img/devices.png';
-        this.gp = '../core/img/google-play-badge.png';
-        this.as = '../core/img/appstore.png';
+        this.devicesBg = './img/devices.png';
+        this.gp = './img/google-play-badge.png';
+        this.as = './img/appstore.png';
       },
     };
   });
