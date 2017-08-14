@@ -11,35 +11,70 @@ header{
   width: 80%;
   margin: 0 auto 520px;
   h2{
-    font-size: 5.2em;
+    @include mobile{
+      font-size: 2.2em;
+      margin-top: 40%;
+    }
+    @include tablet{
+      font-size: 4em;
+      margin-top: 30%;
+    }
+    @include desktop{
+      font-size: 5.2em;
+      margin-top: 25%;
+    }
+
     font-weight: 300;
-    margin-top: 25%;
     color: $purple;
   }
   p{
-    
-    font-size: 2.2em;
+    @include mobile{
+      font-size: 1.2em;
+    }
+    @include tablet{
+      font-size: 2em;
+    }
+    @include desktop{
+      font-size: 2.2em;
+    }
+
     font-weight: 300;
-    margin: 40px 0;
     color: white;
   }
   a{
-    color: $purple;
-    font-weight: 400;
-    font-size: 2.2em;
     @include transition(background .3s ease, color .3s ease);
+    @include mobile{
+      font-size: 1.2em;
+    }
+    @include tablet{
+      font-size: 2em;
+    }
+    @include desktop{
+      font-size: 2.2em;
+    }
+
+    font-weight: 400;
     text-decoration: none;
+    color: $purple;
     &.btn-webarrio{
-      margin: auto;
-      display: block;
-      width: 300px;
+      @include mobile{
+        width: 200px;
+      }
+      @include tablet{
+        width: 300px;
+      }
+      @include desktop{
+        width: 300px;
+      }
+
       line-height: 60px;
+      display: block;
+      margin: auto;
       border: solid $purple 2px;
     }
     &:hover{
-      background-color: $purple;
       color: white;
+      background-color: $purple;
     }
   }
-
 }

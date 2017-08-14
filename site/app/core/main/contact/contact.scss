@@ -7,7 +7,16 @@
   background-position: top center;
   background-size: cover;
   h2{
-    font-size: 5.2em;
+    @include mobile{
+      font-size: 2.2em;
+    }
+    @include tablet{
+      font-size: 4em;
+    }
+    @include desktop{
+      font-size: 5.2em;
+    }
+
     font-weight: 300;
     color: $orange;
   }
@@ -17,7 +26,16 @@
     color: $orange;
   }
   p{
-    font-size: 1.8em;
+    @include mobile{
+      font-size: 1em;
+    }
+    @include tablet{
+      font-size: 1.4em;
+    }
+    @include desktop{
+      font-size: 1.8em;
+    }
+
     font-weight: 300;
     margin: 20px 0;
     strong{
@@ -25,7 +43,15 @@
     }
   }
   .inputcontent{
-    width: 50%;
+    @include mobile{
+      width: auto;
+    }
+    @include tablet{
+      width: 60%;
+    }
+    @include desktop{
+      width: 50%;
+    }
     margin: 50px auto;
     input{
       height: 50px;
@@ -42,9 +68,19 @@
   }
   .social{
     display: block;
-    width: 50%;
+    @include mobile{
+      width: auto;
+    }
+    @include tablet{
+      width: 60%;
+    }
+    @include desktop{
+      width: 50%;
+    }
     margin: 100px auto;
     .icon{
+      @include transition(background .3s ease);
+
       font-size: 30px;
       line-height: 50px;
       display: block;
@@ -54,7 +90,6 @@
       text-align: center;
       color: white;
       background: $orange;
-      @include transition(background .3s ease);
       &.facebook:hover{
         background: #3b5998;
       }
@@ -68,16 +103,24 @@
   }
   .available{
     display: block;
+    float: left;
     width: 100%;
-        float: left;
-        margin: 100px 0 0;
+    margin: 100px 0 0;
     p{
       font-size: 1.8em;
       text-transform: uppercase;
     }
   }
   .store{
-        width: 70%;
+    @include mobile{
+      width: auto;
+    }
+    @include tablet{
+      width: 60%;
+    }
+    @include desktop{
+      width: 70%;
+    }
     margin: 40px auto 500px;
   }
 }
